@@ -1,0 +1,40 @@
+.wrapper {
+  width: 40%;
+  margin: 20px auto;
+}
+
+.test-header {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+.question-item {
+  margin: 20px 40px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.answer-item {
+  margin: 5px 10px;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  vertical-align: middle;
+}
+
+.test-button {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  border: 1px solid #000;
+  display: block;
+  margin: 40px auto;
+  background-color: #B2DFEE;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.questions {
+  list-style: decimal;
+}

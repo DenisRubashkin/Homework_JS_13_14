@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Демонстрация: тест</title>
+  
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/lodash.min.js"></script>
+  <script type="text/javascript" src="js/lib.js"></script>
+  
+  <meta charset="utf-8">
+</head>
+<body>
+  <div class="wrapper">
+
+  <script type="text/template" id="tmpl-test">
+    <div class="test">
+    <h1 class="test-header">Тест по программированию</h1>
+    <form action="#" method="post" class="questions-form">
+      <ol class="questions">
+        <% for(var i = 0; i < questions.length; i++) {%>
+        <li class="question-item"> <%= questions[i].text %>
+          <ul class="answers">
+            <% for(var j = 0; j < questions[i].answers.length; j++) {%>
+            <li class="answer-item">
+              <input type="hidden" name="<%= 'q' + i + '_' + j %>">
+              <input type="checkbox" id="<%= 'q' + i + '_' + j %>" name="<%= 'q' + i + '_' + j %>">
+              <label for="<%= 'q' + i + '_' + j %>"><%= questions[i].answers[j].text %></label>
+            </li> <% }; %>
+          </ul>
+        </li> <% }; %>
+      </ol>
+    <input type="submit" class="test-button" value="Проверить мои результаты"></form>
+    </div>
+  </script>
+
+  </body>
+</html>
